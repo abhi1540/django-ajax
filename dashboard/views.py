@@ -76,10 +76,12 @@ class ChartData(APIView):
         # qs_count = User.objects.all().count()
         # labels = ["Users", "Blue", "Yellow", "Green", "Purple", "Orange"]
         # default_items = [qs_count, 23, 2, 3, 12, 2]
-        labels = ["Blue", "Yellow", "Green", "Purple", "Orange"]
-        default_items = [23, 2, 3, 12, 2]
+        labels = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+        default_items1 = [5427, 5243, 5514, 3933, 1326, 687, 1271, 1638]
+        default_items2 = [3.7, 8.9, 9.8, 3.7, 23.1, 9.0, 8.7, 11.0]
         data = {
                 "labels": labels,
-                "default": default_items,
+                "default1": default_items1,
+                "default2": default_items2,
         }
         return Response(data)
